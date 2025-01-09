@@ -1,0 +1,290 @@
+html {margin: 0;
+    padding: 0;}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+main.usersPage {
+    height: 100vh; 
+    width: 80%;
+    align-items: center;
+    border: 1px solid lightgray;
+    position: relative;
+}
+.usersPage span {font-weight: bold;}
+.usersPage p#ctis {margin: 10px;}
+.usersPage nav { height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.usersPage nav div.empty { font-size: 50px; color: lightgray;}
+.usersPage button#new-profile-btn {margin-left: 15px;}
+.opacity { opacity: 0.5; }
+
+div#prompt {
+    position: absolute;
+    display: flex;
+    top: 100px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: lightgrey;
+    padding: 10px;
+}
+button#addbtn { width: 50px;}
+
+.user { 
+    margin: 10px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    height: 140px;
+    margin-top: 20px;
+}
+.user-icon-and-name p.icon { font-size: 60px;}
+.userProfiles {  width: 140px; border: 1px solid black; 
+    border-radius: 10px; height: 160px;
+    background-color: lightgray;
+}
+.userProfiles:hover { background-color: rgb(143, 139, 139); cursor: pointer;}
+.user section p{ 
+    /* border: 1px solid orange;  */
+    margin: 0;}
+#xbtn { 
+    background-color:blue; 
+    border-radius:  100%; 
+    color: white; 
+    padding: 4px 5px;
+    cursor: pointer;
+}
+.cryptoPage {
+    height: 100vh; 
+    width: 80%;
+    border: 1px solid darkgrey;
+
+}
+.cryptoPage .header {
+    display: flex;
+   justify-content: space-between;
+    margin: 10px;    
+}
+.userAndLogOut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#logout {
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+}
+#logout:hover { background-color: lightgray;}
+
+*{
+    box-sizing:content-box;
+}
+.stick { border:1px solid black ; width: 0 ; position: absolute ;}
+.bar { position: absolute; width: 6px; border: 1px solid black; z-index:1 ;}
+#chart{border: 1px solid lightgray; position: relative; height: 350px; margin-bottom: 10px;}
+#list{height: 70px; display: flex; align-items: center; justify-content:center ; gap: 10px;}
+#coins{
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 5px;
+
+}
+
+#title{
+    border: 1px solid lightgray;
+    display:flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+#line{
+    position: absolute;
+    border: 1px dashed lightgray;
+    width: 100%;
+}
+#max{
+    position: absolute;
+    background-color: white;
+    font-size: larger;
+    top: -10px;
+    right: 20px;
+}
+
+#min{
+    position: absolute;
+    background-color: white;
+    font-size: larger;
+    bottom: -10px;
+    right: 20px;
+}
+
+#bg{
+    border: 1px solid lightgray;
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#cl{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: lightgray;
+    font-size: larger;
+}
+span{
+    visibility: hidden;
+    color: red;
+}
+
+span:hover{
+    visibility: visible;
+}
+
+.wallet {
+    width: 100%;
+}
+
+.wallet table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 0%;
+  }
+  
+
+  .wallet table th {
+    background-color: rgb(156, 167, 240); 
+    color: white; 
+    padding: 6px; 
+    text-align: left; 
+    font-size: 14px;
+    font-weight: normal;
+
+    }
+    
+  .wallet table td {
+    background-color: rgb(117, 252, 144);
+    color: black;
+    border: 0px;
+    padding: 6px;
+    font-size: 14px;
+
+  }
+  
+  .wallet table td span {
+    font-weight: bold;
+  }
+
+  .wallet h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 1%;
+  }
+
+
+  .h1Money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #buttons{
+    margin-left: 43%;
+  }
+  
+  .userBalance {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px; 
+    font-weight: bold;
+  }
+  
+  .trading {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+  }
+  
+  .trading h2 {
+    font-size: 24px;  
+    font-weight: bold;
+    text-align: center;
+    margin: 0%
+  }
+  
+  .buyAndSell {
+    display: flex;
+    border: 1px solid lightgray;
+    font-size: 15px; 
+    gap: 50px;
+    border-radius: 5px;
+    padding: 5px 110px;
+    margin: 0%;
+  }
+
+  .buyAndSell .selectedTrading {
+    background-color: green;
+    border: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 0%;
+  }
+  
+  .buyAndSell .notselected {
+    background-color: white; 
+    color: black;
+    cursor: pointer;
+    margin: 0%;
+  }
+
+  #days h1{
+    text-align: center;
+  }
+  #days h2{
+    text-align: center;
+  }
+  
+  .trading .calcAmount {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+  }
+  
+  .trading #amount {
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin: 0%;
+
+  }
+  
+  .trading .showMoney {
+    font-size: 14px;
+  }
+  
+  .trading button#buyBtn {
+    background-color: green;
+    color: white;
+    padding: 5px 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0%;
+  }
